@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgba(0, 0, 0, 0.479);
+    font-family: 'Estonia', cursive;
+}
+
+.main{
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 601px) {
+    .footer{
+        display: flex;
+        padding: 1%;
+        width: 98%;
+    }
+
+    .main h1{
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        width: 98%;
+    }
+
+    .main h1{
+        font-size: 3rem;
+    }
+
+    .footer > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 1rem;
+    }
+}
+
+.footer > div{
+    width: 100%;
+}
+
+.footer div:first-child{
+    margin-top: -4rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.heading h1{
+    font-size: 1.7rem;
+}
+
+.heading li{
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.social > div{
+    display: flex;
+    justify-content: center;
+}
+
+.social div img{
+    margin: 0 10%;
+}
+
+.company-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
